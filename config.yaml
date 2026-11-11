@@ -1,0 +1,126 @@
+seeds:
+  government:
+    - "https://scholarships.gov.in"
+    - "https://scholarships.gov.in/public/schemeGuidelines/schemeGuidelines.html"
+    - "https://www.ugc.gov.in/page/Scholarships-and-Fellowships.aspx"
+    - "https://www.aicte-india.org/schemes/students-development-schemes"
+    - "https://socialjustice.gov.in/schemes"
+    - "https://tribal.nic.in/scholarship.aspx"
+    - "https://www.education.gov.in/scholarships-and-loans"
+    - "https://minorityaffairs.gov.in/schemes"
+    - "https://www.ugc.gov.in/page/Major-Schemes.aspx"
+    - "https://dbtbharat.gov.in/page/frontcontentview/?id=NjQ="
+    - "https://www.pfms.nic.in/SchemeSearch.aspx"
+    - "https://wcd.nic.in/schemes/indira-gandhi-matritva-sahyog-yojana-igsmy"
+    - "https://scholarships.gov.in/fresh/newstdRegfrmInstruction"
+  university:
+    - "https://www.iitb.ac.in/en/education/financial-assistance"
+    - "https://www.iitd.ac.in/content/scholarships"
+    - "https://www.du.ac.in/du/index.php?page=scholarship"
+    - "https://www.jnu.ac.in/Academics/SchoolCentreSpecialUnit/scholarship"
+    - "https://www.bits-pilani.ac.in/admission/financial-assistance/"
+    - "https://www.iitm.ac.in/student/financial-aid"
+    - "https://www.iitk.ac.in/doaa/scholarships-fellowships"
+    - "https://www.iisc.ac.in/admissions/financial-assistance/"
+    - "https://www.nit.ac.in/page-financial-assistance.html"
+    - "https://www.nitrkl.ac.in/Students/Scholarship"
+  foundation_csr:
+    - "https://www.tatacapital.com/about-us/csr/pankh-scholarship-programme.html"
+    - "https://www.reliancefoundation.org/education/scholarships"
+    - "https://www.adityabirlacapital.com/abc-of-csr/scholarship-programme"
+    - "https://www.infosysbpm.com/corporate-social-responsibility/scholarship.html"
+    - "https://azimpremjifoundation.org/scholarships"
+    - "https://www.wipro.com/en-IN/sustainability/education/"
+    - "https://www.chevening.org/scholarships/chevening-scholarships/india/"
+    - "https://www.usief.org.in/Fellowships.aspx"
+
+search_queries:
+  - "scholarship for Indian students site:gov.in"
+  - "scholarship notification 2025-26 site:nic.in"
+  - "fellowship Indian students site:ac.in"
+  - "CSR scholarship India 2025 foundation"
+  - "merit scholarship undergraduate India 2025"
+
+keywords:
+  scholarship: 3
+  fellowship: 3
+  stipend: 2
+  financial assistance: 2
+  merit: 1
+  notification: 1
+  apply: 1
+  eligibility: 1
+  csr: 1
+  award: 1
+
+aggregators:
+  - buddy4study.com
+  - scholarships.net.in
+  - scholarship-positions.com
+  - jagranjosh.com
+  - medium.com
+  - blogspot.com
+  - youtube.com
+  - facebook.com
+  - twitter.com
+  - instagram.com
+  - quora.com
+  - reddit.com
+
+foundation_allowlist:
+  tatacapital.com: CORPORATE_CSR
+  tatatrusts.com: FOUNDATION
+  reliancefoundation.org: FOUNDATION
+  hdfcbank.com: CORPORATE_CSR
+  hdfcparivartan.com: CORPORATE_CSR
+  adityabirlacapital.com: CORPORATE_CSR
+  kcmahindrascholarships.com: FOUNDATION
+  infosys.com: CORPORATE_CSR
+  infosysbpm.com: CORPORATE_CSR
+  wipro.com: CORPORATE_CSR
+  azimpremjifoundation.org: FOUNDATION
+  chevening.org: INTERNATIONAL
+  usief.org.in: INTERNATIONAL
+  fulbrightonline.org: INTERNATIONAL
+  wellspringfoundation.in: FOUNDATION
+  ltifinance.com: CORPORATE_CSR
+
+scoring:
+  official_source:
+    official_domain: 20
+    allowlisted: 16
+    unknown: 0
+  present_on_source: 15
+  application_url: 10
+  eligibility: 15
+  deadline: 10
+  freshness:
+    max_7_days: 5
+    max_30_days: 3
+    older: 0
+  no_conflict: 10
+  consistency: 10
+  traceability: 5
+
+thresholds:
+  verified_min_score: 95.0
+  name_match_min: 90
+  link_relevance_min: 3
+  max_discovery_depth: 2
+  max_links_per_page: 50
+  request_delay_seconds: 2.5
+  request_timeout_seconds: 15
+  max_retries: 3
+  expiring_soon_days: 15
+  stale_runs_before_no_longer_verifiable: 2
+
+llm:
+  enabled: false
+  model: "llama3.1:8b"
+  base_url: "http://localhost:11434"
+  temperature: 0
+  max_text_chars: 12000
+
+crawler:
+  user_agent: "ScholarshipCrawler/1.0 (educational research; contact: scholar@example.com)"
+  max_pages_per_run: 200

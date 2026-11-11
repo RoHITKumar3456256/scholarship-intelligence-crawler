@@ -1,0 +1,13 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.env
+data/snapshots/
+!data/snapshots/.gitkeep
+*.log
+.DS_Store
